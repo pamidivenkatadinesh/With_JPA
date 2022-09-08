@@ -29,7 +29,7 @@ public class CourseService {
 		
 		
 	}
-	public void DeleteCourse(Course course, String id) {
+	public void DeleteCourse( String id) {
 		//courses.removeIf(t->t.getId().equals(id));
 		courseRepositry.deleteById(id);
 		
