@@ -13,15 +13,6 @@ public class CourseService {
 	@Autowired
 	private CourseRepositry courseRepositry;
 	
-	private List<Course> courses= new ArrayList<>(Arrays.asList(
-			 new Course("btech","341","4years"),
-			 new Course("bed","342","2 years"),
-			 new Course("bcom","343","20 years")
-			 ));
-	
-	
-	
-	
 	public   List<Course> getallcourses(){
 		//return courses;
 		return (List<Course>) courseRepositry.findAll();
