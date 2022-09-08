@@ -37,8 +37,8 @@ public class CourseCountroller {
 		courseService.UpdateCourse(course,id);
 	}
 	@RequestMapping(method=RequestMethod.DELETE,value="/courses/{id}")
-	public void DeleteCourse(@RequestBody Course course,@PathVariable String id) {
-		courseService.DeleteCourse(course,id);
+	public void DeleteCourse(@PathVariable String id) {
+		courseService.DeleteCourse(id);
 	}
 	
 	
